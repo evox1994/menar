@@ -81,6 +81,14 @@ $(document).ready(function(){
 		speed: 500
 	});
 
+	$(document).on('click','.scroll-btn',function(){
+		var el = $(this).attr('href');
+		var des = $(el).offset().top;
+
+		$('body,html').animate({scrollTop: des},800);
+		return false;
+	});
+
 	function burgerScroll(){
 		var gs = $('.header-burger').offset().top - 10;
 		var st = $(window).scrollTop();
