@@ -89,6 +89,15 @@ $(document).ready(function(){
 		return false;
 	});
 
+	function footerYear(){
+		var date = new Date();
+		var year = date.getFullYear();
+		if ( $('#footer-year').length ){
+			$('#footer-year').text(year);
+		}
+	}
+	footerYear();
+
 	function burgerScroll(){
 		var gs = $('.header-burger').offset().top - 10;
 		var st = $(window).scrollTop();
