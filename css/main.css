@@ -361,6 +361,13 @@
 	padding-top: 60px;
 	padding-bottom: 230px;
 }
+.other-cards {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-image: url('../i/other-cards.jpg');
+	padding: 140px 0 80px;
+}
 .cards {
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -368,6 +375,9 @@
 	justify-content: space-between;
 	align-items: stretch;
 	flex-wrap: wrap;
+}
+.other-cards .cards {
+	justify-content: flex-start;
 }
 .cards .card {
 	overflow: hidden;
@@ -377,6 +387,14 @@
 	max-width: 500px;
 	margin-top: 85px;
 	background-color: #ffffff;
+}
+.other-cards .cards .card {
+	width: calc(100%/3 - 20px);
+	margin-right: 30px;
+	margin-top: 70px;
+}
+.other-cards .cards .card:nth-child(3n) {
+	margin-right: 0;
 }
 .cards .card .image {
 	overflow: hidden;
@@ -389,6 +407,9 @@
 .cards .card .content {
 	padding: 40px 35px 50px;
 	text-align: left;
+}
+.other-cards .cards .card .content {
+	padding: 25px;
 }
 .cards .card .name {
 	display: block;
@@ -888,6 +909,64 @@
 	margin-bottom: 0;
 }
 
+.result-block {
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url('../i/result-block-bg.jpg');
+	padding: 200px 0 100px;
+}
+
+.b-video {
+	max-width: 560px;
+	margin: 110px auto 0;
+}
+.b-video .video {
+	position: relative;
+	width: 100%;
+	height: 315px;
+	margin-bottom: 20px;
+}
+.b-video .video iframe {
+	width: 100%;
+	height: 100%;
+}
+.b-video .name {
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url('../i/video-gray.png');
+	max-width: 430px;
+	margin: 0 auto 40px;
+	font-size: 14px;
+	padding: 21px 30px;
+}
+.b-video .btn {
+	margin: 0 auto;
+}
+
+.gallery {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.gallery li {
+	width: calc(100%/3 - 20px);
+	margin-right: 30px;
+	margin-top: 30px;
+}
+.gallery li:nth-child(3n) {
+	margin-right: 0;
+}
+.gallery li img {
+	display: block;
+	max-width: 100%;
+	border-radius: 10px;
+	margin: 0 auto;
+}
 
 
 
@@ -1046,6 +1125,15 @@
 		max-width: 220px;
 		left: 130px;
 	}
+
+	.other-cards .cards {
+		justify-content: space-between;
+	}
+	.other-cards .cards .card {
+		width: calc(50% - 30px);
+		max-width: 370px;
+		margin-right: 0;
+	}
 }
 @media screen and (max-width: 960px){
 	.face-wrap {
@@ -1086,6 +1174,25 @@
 	.mental-face .wrap .image {
 		width: 100%;
 		margin-top: 40px;
+	}
+
+	.mental-preim {
+		display: block;
+	}
+	.mental-preim .image, .mental-preim .items {
+		width: 100%;
+	}
+	.mental-preim .items {
+		margin-top: 60px;
+	}
+
+	.gallery {
+		justify-content: space-between;
+	}
+	.gallery li {
+		margin-right: 0;
+		width: calc(50% - 10px);
+		margin-top: 20px;
 	}
 }
 @media screen and (max-width: 768px){
@@ -1136,12 +1243,15 @@
 		padding-top: 30px;
 		padding-bottom: 130px;
 	}
-	.cards .card {
+	.cards .card, .other-cards .cards .card {
 		width: calc(50% - 10px);
 		margin-top: 30px;
 	}
 	.cards .card .content {
 		padding: 20px 15px 30px;
+	}
+	.other-cards .cards .card .content {
+		padding: 15px;
 	}
 	.cards .card .name {
 		font-size: 16px;
@@ -1307,14 +1417,47 @@
 	.mental-opr .text p {
 		margin-bottom: 16px;
 	}
+
+	.mental-preim .items {
+		margin-top: 0;
+	}
+	.mental-preim .image img {
+		max-height: 300px;
+	}
+	.mental-preim .items .item {
+		padding: 30px 15px 15px;
+		margin-top: 30px;
+	}
+	.mental-preim .items .item .number {
+		left: 20px;
+		font-size: 36px;
+	}
+	.mental-preim .items .item .text {
+		font-size: 13px;
+	}
+
+	.result-block {
+		padding: 100px 0 50px;
+	}
+
+	.b-video {
+		margin-top: 30px;
+	}
+	.b-video .video {
+		margin-bottom: 10px;
+	}
+	.b-video .name {
+		font-size: 12px;
+		margin-bottom: 20px;
+	}
 }
 @media screen and (max-width: 560px){
 	.cards {
 		display: block;
 	}
-	.cards .card {
+	.cards .card, .other-cards .cards .card {
 		width: 100%;
-		margin: 30px auto 0;
+		margin: 30px auto 0 !important;
 	}
 
 	.descr-list {
@@ -1324,6 +1467,14 @@
 		width: 100%;
 		max-width: 360px;
 		margin: 0 auto 20px !important;
+	}
+
+	.gallery {
+		display: block;
+	}
+	.gallery li {
+		width: 100%;
+		margin: 20px auto 0 !important;
 	}
 }
 @media screen and (max-width: 460px){
@@ -1341,6 +1492,13 @@
 		max-width: 330px;
 	}
 	.videos .video-wrap .video {
+		height: 185px;
+	}
+
+	.b-video {
+		max-width: 330px;
+	}
+	.b-video .video {
 		height: 185px;
 	}
 }
