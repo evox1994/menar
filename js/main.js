@@ -81,6 +81,10 @@ $(document).ready(function(){
 		speed: 500
 	});
 
+	$('.about-slider').slick({
+		dots: true
+	});
+
 	$(document).on('click','.scroll-btn',function(){
 		var el = $(this).attr('href');
 		var des = $(el).offset().top;
