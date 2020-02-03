@@ -298,8 +298,8 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 	content: '';
 	position: absolute;
     border-radius: 4px;
-    left: calc(50% - 10px);
-    top: calc(50% - 1px);
+    left: 14px;
+    top: 24px;
     width: 20px;
     height: 2px;
     background-color: #333333;
@@ -312,8 +312,8 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 	content: '';
     position: absolute;
     border-radius: 4px;
-    left: calc(50% - 10px);
-    top: calc(50% - 1px);
+    left: 14px;
+    top: 24px;
     width: 20px;
     height: 2px;
     background-color: #333333;
