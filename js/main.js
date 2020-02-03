@@ -85,6 +85,15 @@ $(document).ready(function(){
 		dots: true
 	});
 
+	$(document).on('change','.b-input input[type="file"]',function(){
+		var files = this.files;
+		if (files.length){
+			$(this).parents('.b-input').find('.file').addClass('active').text(files[0].name);
+		} else {
+			$(this).parents('.b-input').find('.file').removeClass('active').text($(this).attr('data-text'));
+		}
+	});
+
 	$(document).on('click','.scroll-btn',function(){
 		var el = $(this).attr('href');
 		var des = $(el).offset().top;

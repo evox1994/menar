@@ -129,10 +129,10 @@ body .body-wrap {
     overflow: hidden;
     padding-top: 152px;
 }
-body.no-scroll .body-wrap {
+/*body.no-scroll .body-wrap {
     height: 100vh !important;
     overflow: hidden !important;
-}
+}*/
 body.main .body-wrap {
     padding-top: 0;
 }
