@@ -94,6 +94,10 @@ $(document).ready(function(){
 		}
 	});
 
+	$('.before-after').twentytwenty({
+		no_overlay: true
+	});
+
 	$(document).on('click','.scroll-btn',function(){
 		var el = $(this).attr('href');
 		var des = $(el).offset().top;

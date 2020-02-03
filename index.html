@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
 	<link rel="stylesheet" href="css/slick.css" type="text/css">
+	<link rel="stylesheet" href="css/twentytwenty.css" type="text/css"/>
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
 
@@ -41,7 +42,7 @@
 								<a href="tel:+73822977753" class="phone">8 (3822) 97-77-53</a>
 								<div class="header-info-item"><b>Томск</b>, пр. Фрунзе 32</div>
 							</div>
-							<a href="#" class="header-btn">Заказать звонок</a>
+							<a href="#popup-callback" class="header-btn fancybox">Заказать звонок</a>
 						</div>
 					</div>
 					<div class="header-nav">
@@ -78,7 +79,7 @@
 						<a href="tel:+73822977753" class="phone">8 (3822) 97-77-53</a>
 						<div class="header-info-item"><b>Томск</b>, пр. Фрунзе 32</div>
 					</div>
-					<a href="#" class="header-btn">Заказать звонок</a>
+					<a href="#popup-callback" class="header-btn fancybox">Заказать звонок</a>
 				</div>
 			</div>
 		</div>
@@ -408,12 +409,30 @@
 		</div>
 
 		<div style="display:none;">
+			<div class="popup" id="popup-callback">
+				<h2 class="title">Заявка на обратный звонок</h2>
+				<div class="subtitle">Наш менеджер свяжется с вами</div>
+				<div class="b-form">
+					<form>
+						<div class="b-input">
+							<input type="text" placeholder="Имя ребёнка">
+						</div>
+						<div class="b-input">
+							<input type="tel" placeholder="+7 (___) ___-__-__">
+						</div>
+						<button type="submit" class="btn">Записаться</button>
+						<div class="policy-text"><div class="radio-btn active"></div>Я принимаю условия <a href="#" target="_blank">политики<br> обработки персональных данных</a></div>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
 
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
 	<script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
+	<script src="js/jquery.event.move.js" type="text/javascript"></script>
+	<script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/slick.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
