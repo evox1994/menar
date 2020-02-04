@@ -28,6 +28,7 @@ $(document).ready(function(){
 	$('.close-btn').click(function(){
 		$('.mobile-btn-wrap').removeClass('active');
 		$('.mobile-menu').removeClass('active');
+		$('.li-drop').removeClass('active');
 		$('body').removeClass('no-scroll');
 	});
 
@@ -104,6 +105,17 @@ $(document).ready(function(){
 
 		$('body,html').animate({scrollTop: des},800);
 		return false;
+	});
+
+	$(document).on('click','.nav .li-drop',function(e){
+		var drop = $(this).children('.drop');
+		if (drop.has(e.target).length === 0) {
+			$(this).addClass('active');
+		}
+	});
+
+	$(document).on('click','.drop-back',function(){
+		$(this).parent('.drop').parent('.li-drop').removeClass('active');
 	});
 
 	function footerYear(){

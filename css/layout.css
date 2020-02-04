@@ -289,7 +289,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 	position: absolute;
 	width: 50px;
 	height: 50px;
-	z-index: 1;
+	z-index: 10;
     left: 30px;
     top: 10px;
     cursor: pointer;
@@ -343,6 +343,15 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 .mobile-menu.active {
 	top: 0;
 }
+.mobile-menu:after, .mobile-menu .nav li.li-drop > .drop:after {
+    content: '';
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+}
 .mobile-menu .nav li {
     text-align: left;
     color: #657078;
@@ -374,6 +383,25 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
+.mobile-menu .nav li.li-drop > .drop {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -200%;
+    padding: 70px 30px;
+    background-color: #ffffff;
+    z-index: 1;
+    cursor: default;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.mobile-menu .nav li.li-drop.active > .drop {
+    left: 0;
+}
 .mobile-menu .nav li a, .mobile-menu .nav li span {
     display: block;
     color: #657078;
@@ -381,6 +409,34 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 }
 .mobile-menu-info {
     margin-top: 30px;
+}
+.mobile-menu .drop-back {
+    display: block;
+    padding-left: 10px;
+    position: absolute;
+    right: 30px;
+    top: 28px;
+    font-size: 14px;
+    line-height: 1;
+    color: #333333;
+    cursor: pointer;
+}
+.mobile-menu .drop-back:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 3px);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../i/drop-arr.png');
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .policy-text {
@@ -476,5 +532,11 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     }
     .close-btn {
         left: 10px;
+    }
+    .mobile-menu .nav li.li-drop > .drop {
+        padding: 70px 10px;
+    }
+    .mobile-menu .drop-back {
+        right: 10px;
     }
 }
