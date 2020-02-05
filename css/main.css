@@ -9,6 +9,9 @@
 	color: #ffffff;
 	padding: 7px 10px;
 }
+.small-btn:hover {
+	background-color: #6aaddc;
+}
 .small-btn span {
 	display: inline-block;
 	position: relative;
@@ -329,6 +332,9 @@
 	text-align: center;
 	border: 0;
 }
+.btn:hover {
+	background-color: #e49230;
+}
 
 .face {
 	background-position: center;
@@ -530,6 +536,18 @@
 }
 .cards .card.card-orange .btn {
 	background-color: #ffaa72;
+}
+.cards .card.card-blue .btn:hover {
+	background-color: #70b0de;
+}
+.cards .card.card-purple .btn:hover {
+	background-color: #e07979;
+}
+.cards .card.card-green .btn:hover {
+	background-color: #42a06a;
+}
+.cards .card.card-orange .btn:hover {
+	background-color: #e09463;
 }
 
 .b-form {
