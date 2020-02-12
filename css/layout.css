@@ -475,7 +475,6 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 }
 .policy-text .radio-btn.error {
     border-color: #ff0000;
-    background-color: #ff0000;
 }
 .policy-text .radio-btn:hover {
     cursor: pointer;
