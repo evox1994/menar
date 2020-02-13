@@ -2267,6 +2267,19 @@
 	color: #0b609c;
 }
 
+.b-text {
+	margin-top: 30px;
+	text-align: left;
+	font-size: 16px;
+}
+.b-text p {
+	display: block;
+	margin-bottom: 16px;
+}
+.b-text p:last-child {
+	margin-bottom: 0;
+}
+
 
 
 
@@ -2974,6 +2987,14 @@
 	}
 	.popup .b-form {
 		margin-top: 20px;
+	}
+
+	.b-text {
+		margin-top: 20px;
+		font-size: 14px;
+	}
+	.b-text p {
+		margin-bottom: 14px;
 	}
 }
 @media screen and (max-width: 560px){
