@@ -494,6 +494,11 @@
 	left: 12%;
 	max-width: 88.1% !important;
 }
+.img-anim-face.img-9 {
+	top: 0;
+	left: 0;
+	max-width: 100% !important;
+}
 .img-anim-el {
 	display: block;
 	position: absolute;
@@ -1027,6 +1032,63 @@
 	-moz-animation-duration: 2.5s;
 	-ms-animation-duration: 2.5s;
 	animation-duration: 2.5s;
+}
+.img-anim-el.el-monk-1 {
+	left: 74.8%;
+	top: 94.5%;
+	max-width: 4.4% !important;
+	-webkit-animation-duration: 2.5s;
+	-moz-animation-duration: 2.5s;
+	-ms-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+	-webkit-transform-origin: 100% 0%;
+	-moz-transform-origin: 100% 0%;
+	-ms-transform-origin: 100% 0%;
+	transform-origin: 100% 0%;
+}
+.img-anim-el.el-monk-2 {
+	left: 94.4%;
+	top: 38.7%;
+	max-width: 4.4% !important;
+	-webkit-animation-duration: 3s;
+	-moz-animation-duration: 3s;
+	-ms-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-transform-origin: 100% 0%;
+	-moz-transform-origin: 100% 0%;
+	-ms-transform-origin: 100% 0%;
+	transform-origin: 100% 0%;
+}
+.img-anim-el.el-monk-3 {
+	left: 6.4%;
+	top: 10.7%;
+	max-width: 4.4% !important;
+	-webkit-animation-duration: 3.5s;
+	-moz-animation-duration: 3.5s;
+	-ms-animation-duration: 3.5s;
+	animation-duration: 3.5s;
+	-webkit-transform-origin: 100% 0%;
+	-moz-transform-origin: 100% 0%;
+	-ms-transform-origin: 100% 0%;
+	transform-origin: 100% 0%;
+}
+.img-anim-el.el-monk-4 {
+	left: 74.3%;
+	top: 1%;
+	max-width: 3.4% !important;
+	-webkit-animation-duration: 2.5s;
+	-moz-animation-duration: 2.5s;
+	-ms-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+}
+.img-anim-el.el-monk-5 {
+	left: 4.4%;
+	top: 81.7%;
+	max-width: 3.3% !important;
+	-webkit-animation-duration: 1.5s;
+	-moz-animation-duration: 1.5s;
+	-ms-animation-duration: 1.5s;
+	animation-duration: 1.5s;
 }
 
 .face {
